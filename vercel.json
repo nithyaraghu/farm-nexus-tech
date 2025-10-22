@@ -1,8 +1,9 @@
 {
-    "installCommand": "pnpm install --frozen-lockfile",
-    "buildCommand": "pnpm run build",
+    "installCommand": "npm ci --include=optional",
+    "buildCommand": "npm run build",
     "env": {
         "NODE_VERSION": "22.20.0",
+        "NPM_CONFIG_OPTIONAL": "true",
         "ROLLUP_SKIP_NODEJS_NATIVE": "1"
     }
 }
