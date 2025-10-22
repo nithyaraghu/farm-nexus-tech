@@ -1,25 +1,19 @@
 {
-  "name": "farm-nexus-tech",
-  "version": "1.0.0",
+  "name": "farm-nexus-site",
   "private": true,
+  "version": "1.0.0",
   "type": "module",
-  "packageManager": "pnpm@9.12.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "4.3.1",
-    "rollup": "4.21.0",
-    "tailwindcss": "4.0.0",
-    "vite": "5.4.10"
-  },
-  "engines": {
-    "node": ">=22.20.0"
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.10"
   }
 }
