@@ -1,3 +1,6 @@
+// src/App.jsx
+import ChatWidget from "./components/ChatWidget.jsx";
+
 /* Reusable LinkedIn Icon */
 function LinkedInIcon({ className = "h-5 w-5" }) {
   return (
@@ -10,7 +13,7 @@ function LinkedInIcon({ className = "h-5 w-5" }) {
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      {/* Navbar */}
+      {/* ===== Header ===== */}
       <header className="bg-green-800 text-white sticky top-0 z-50">
         <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
           <span className="text-lg font-semibold">Farm Nexus Tech</span>
@@ -37,7 +40,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* Hero */}
+      {/* ===== Hero ===== */}
       <section id="home" className="bg-green-50 w-full">
         <div className="w-full px-4 py-20 text-center">
           <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-800">
@@ -55,19 +58,19 @@ export default function App() {
         </div>
       </section>
 
-      {/* About */}
+      {/* ===== About ===== */}
       <section id="about" className="py-16 px-4">
         <div className="max-w-5xl mx-auto text-center sm:text-left">
           <h2 className="text-2xl sm:text-3xl font-bold text-green-800">About Us</h2>
           <p className="mt-4 text-slate-700 leading-relaxed">
-            Farm Nexus Tech designs and builds IoT-enriched polyhouses and supports farmers with agronomy and market linkages.
-            We align with the <b>Mission for Integrated Development of Horticulture (MIDH)</b> to deliver turnkey protected
-            cultivation projects that ensure profitability, sustainability, and innovation.
+            Farm Nexus Tech designs and builds IoT-enriched polyhouses and supports farmers with agronomy and market
+            linkages. We align with the <b>Mission for Integrated Development of Horticulture (MIDH)</b> to deliver
+            turnkey protected cultivation projects that ensure profitability, sustainability, and innovation.
           </p>
         </div>
       </section>
 
-      {/* Services */}
+      {/* ===== Services ===== */}
       <section id="services" className="bg-slate-50 w-full py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-green-800">Our Services</h2>
@@ -94,7 +97,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Contact */}
+      {/* ===== Contact ===== */}
       <section id="contact" className="w-full py-16 px-4 bg-green-50">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-green-800">Contact Us</h2>
@@ -102,6 +105,7 @@ export default function App() {
             Have questions or need a custom quotation? Reach out to us anytime.
           </p>
 
+          {/* LinkedIn button in contact */}
           <div className="mt-6 flex items-center justify-center gap-3">
             <a
               href="https://www.linkedin.com/company/farm-nexus-tech/"
@@ -114,6 +118,7 @@ export default function App() {
             </a>
           </div>
 
+          {/* Simple mailto form (swap to Formspree later if you want) */}
           <form
             className="mt-10 max-w-xl mx-auto grid gap-4 text-left"
             action="mailto:farmnexustech.polyhouse@gmail.com"
@@ -139,7 +144,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* ===== Footer ===== */}
       <footer className="bg-green-800 text-white">
         <div className="mx-auto max-w-7xl px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
           <span>© {new Date().getFullYear()} Farm Nexus Tech • GSTIN: 33ANFPM9404N1ZP</span>
@@ -156,6 +161,9 @@ export default function App() {
           </a>
         </div>
       </footer>
+
+      {/* ===== Floating AI Chatbot ===== */}
+      <ChatWidget />
     </div>
   );
 }
