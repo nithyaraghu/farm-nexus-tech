@@ -1,7 +1,7 @@
 {
-  "name": "farm-nexus-site",
-  "private": true,
+  "name": "farm-nexus-tech",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,13 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "4.3.1",
     "tailwindcss": "4.1.15",
     "vite": "5.4.10",
     "rollup": "4.21.0"
+  },
+  "engines": {
+    "node": ">=22.20.0"
   }
 }
