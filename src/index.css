@@ -1,0 +1,38 @@
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* Global resets / helpers */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* fixes right-side whitespace */
+  scroll-behavior: smooth;
+  /* smooth anchor scroll */
+  background-color: #ffffff;
+  color: #1e293b;
+  /* slate-800 */
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a,
+button {
+  transition: all 0.2s ease-in-out;
+}
